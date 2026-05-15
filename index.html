@@ -1,219 +1,406 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Политика конфиденциальности — love-2026.ru</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Политика конфиденциальности | WeddingLab</title>
+    
+    <!-- Fonts (как на основном сайте) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ===== СТИЛИ ПОЛНОСТЬЮ С ОСНОВНОГО САЙТА (СВЕТЛАЯ ТЕМА) ===== */
+        :root {
+            --boho-primary: #C9A959;
+            --boho-secondary: #8A9A5B;
+            --boho-accent: #B38B6D;
+            --boho-dark: #4A3C31;
+            --boho-light: #F8F4E9;
+            --boho-lighter: #FFFDF6;
+            --boho-text: #3E3A34;
+            --boho-text-light: #7A756D;
+            --gradient: linear-gradient(135deg, #C9A959 0%, #8A9A5B 100%);
+            --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.15);
+            --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.2);
+            --radius-xl: 32px;
+            --radius-md: 16px;
+            --transition-fast: 0.3s ease;
+        }
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+        body {
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+            font-weight: 300;
+            background-color: var(--boho-light);
+            color: var(--boho-text);
+            -webkit-font-smoothing: antialiased;
+        }
 
-    body {
-      font-family: 'Cormorant Garamond', serif;
-      background: #f9f9f7;
-      color: #4a5345;
-      line-height: 1.7;
-      padding: 24px;
-    }
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
 
-    .page {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(255,255,255,0.92);
-      padding: clamp(24px, 5vw, 56px);
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-    }
+        /* Header как на основном сайте */
+        .privacy-header {
+            padding: 120px 0 40px;
+            text-align: center;
+            background: var(--boho-lighter);
+            border-bottom: 1px solid rgba(201, 169, 89, 0.1);
+        }
 
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      color: #3f493a;
-      line-height: 1.25;
-    }
+        .privacy-header h1 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--boho-text);
+            font-family: 'Playfair Display', serif;
+        }
 
-    h1 {
-      font-size: clamp(2rem, 5vw, 3rem);
-      margin-bottom: 12px;
-      text-align: center;
-    }
+        .privacy-header .subtitle {
+            font-size: 1.125rem;
+            color: var(--boho-text-light);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+            font-style: italic;
+        }
 
-    .subtitle {
-      text-align: center;
-      color: #768b7a;
-      margin-bottom: 40px;
-      font-size: 1.1rem;
-    }
+        /* Основной контент */
+        .privacy-content {
+            padding: 60px 0;
+            background: var(--boho-lighter);
+        }
 
-    h2 {
-      font-size: 1.45rem;
-      margin: 36px 0 14px;
-      padding-top: 8px;
-      border-top: 1px solid rgba(180, 189, 170, 0.45);
-    }
+        .privacy-card {
+            background: var(--boho-lighter);
+            border-radius: var(--radius-xl);
+            border: 1px solid rgba(201, 169, 89, 0.1);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
 
-    p {
-      margin-bottom: 14px;
-      font-size: 1.1rem;
-    }
+        .privacy-inner {
+            padding: 48px;
+        }
 
-    ul {
-      margin: 8px 0 18px 22px;
-    }
+        /* Стилизация текста */
+        .privacy-inner h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: var(--boho-text);
+            margin: 40px 0 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(201, 169, 89, 0.2);
+        }
 
-    li {
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
+        .privacy-inner h2:first-of-type {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
 
-    a {
-      color: #637257;
-      text-decoration: underline;
-    }
+        .privacy-inner p {
+            color: var(--boho-text-light);
+            margin-bottom: 16px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
 
-    .info-box {
-      background: rgba(212, 215, 200, 0.28);
-      padding: 16px 18px;
-      border-radius: 12px;
-      margin: 18px 0;
-    }
+        .privacy-inner ul {
+            margin: 12px 0 20px 24px;
+        }
 
-    .footer {
-      margin-top: 44px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(180, 189, 170, 0.45);
-      color: #768b7a;
-      font-size: 0.95rem;
-      text-align: center;
-    }
+        .privacy-inner li {
+            color: var(--boho-text-light);
+            margin-bottom: 10px;
+            font-weight: 300;
+            line-height: 1.7;
+        }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 12px;
-      }
+        .privacy-inner li::marker {
+            color: var(--boho-primary);
+        }
 
-      .page {
-        border-radius: 12px;
-      }
+        .privacy-inner a {
+            color: var(--boho-primary);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+            border-bottom: 1px dotted rgba(201, 169, 89, 0.4);
+        }
 
-      p, li {
-        font-size: 1rem;
-      }
-    }
-  </style>
+        .privacy-inner a:hover {
+            color: var(--boho-secondary);
+            border-bottom-color: var(--boho-primary);
+        }
+
+        .privacy-inner strong {
+            color: var(--boho-text);
+            font-weight: 600;
+        }
+
+        /* Info box как на основном сайте */
+        .info-box {
+            background: rgba(201, 169, 89, 0.05);
+            border-left: 3px solid var(--boho-primary);
+            padding: 24px 28px;
+            border-radius: var(--radius-md);
+            margin: 24px 0;
+        }
+
+        .info-box p {
+            margin-bottom: 8px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Кнопка назад */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            padding: 12px 24px;
+            border-radius: 50px;
+            color: var(--boho-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all var(--transition-fast);
+            margin-bottom: 30px;
+            border: 1px solid rgba(201, 169, 89, 0.3);
+        }
+
+        .back-link i {
+            font-size: 0.9rem;
+            transition: transform var(--transition-fast);
+        }
+
+        .back-link:hover {
+            background: var(--gradient);
+            color: white;
+            border-color: transparent;
+            transform: translateY(-3px);
+        }
+
+        .back-link:hover i {
+            transform: translateX(-4px);
+            color: white;
+        }
+
+        /* Футер как на основном сайте */
+        .privacy-footer {
+            margin-top: 48px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(201, 169, 89, 0.1);
+            text-align: center;
+            color: var(--boho-text-light);
+            font-size: 0.875rem;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .privacy-header {
+                padding: 100px 0 30px;
+            }
+
+            .privacy-inner {
+                padding: 30px 24px;
+            }
+
+            .privacy-inner h2 {
+                font-size: 1.5rem;
+                margin: 30px 0 15px;
+            }
+
+            .info-box {
+                padding: 18px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .privacy-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .privacy-inner {
+                padding: 24px 20px;
+            }
+
+            .privacy-inner h2 {
+                font-size: 1.35rem;
+            }
+
+            .privacy-inner p,
+            .privacy-inner li {
+                font-size: 0.95rem;
+            }
+        }
+
+        /* Анимация появления как на основном сайте */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .privacy-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+    </style>
 </head>
 
 <body>
-  <main class="page">
-    <h1>Политика обработки персональных данных</h1>
-    <p class="subtitle">для сайтов-приглашений на домене love-2026.ru</p>
-
-    <section>
-      <h2>1. Общие положения</h2>
-      <p>Настоящая Политика обработки персональных данных определяет порядок обработки и защиты персональных данных пользователей сайтов-приглашений, размещённых на домене <strong>love-2026.ru</strong> и его поддоменах.</p>
-      <p>Политика разработана в соответствии с Федеральным законом РФ от 27.07.2006 №152-ФЗ «О персональных данных».</p>
-      <p>Используя сайт и отправляя форму RSVP, пользователь подтверждает согласие с настоящей Политикой.</p>
-
-      <div class="info-box">
-        <p><strong>Оператор персональных данных:</strong> самозанятый / физическое лицо.</p>
-        <p><strong>Email для связи:</strong> <a href="mailto:ВАШ_EMAIL">ВАШ_EMAIL</a></p>
-        <p><strong>Домен сервиса:</strong> love-2026.ru</p>
-      </div>
-    </section>
-
-    <section>
-      <h2>2. Какие данные обрабатываются</h2>
-      <p>Оператор может обрабатывать следующие персональные данные:</p>
-      <ul>
-        <li>имя;</li>
-        <li>фамилия;</li>
-        <li>информация о присутствии на мероприятии;</li>
-        <li>количество гостей;</li>
-        <li>предпочтения по напиткам или питанию;</li>
-        <li>текстовые пожелания и комментарии.</li>
-      </ul>
-      <p>Пользователь самостоятельно принимает решение о предоставлении данных.</p>
-      <p>Оператор не осуществляет обработку специальных категорий персональных данных, за исключением случаев, когда пользователь добровольно указывает такие сведения в текстовом поле формы.</p>
-    </section>
-
-    <section>
-      <h2>3. Цели обработки персональных данных</h2>
-      <p>Персональные данные используются исключительно для:</p>
-      <ul>
-        <li>организации мероприятия;</li>
-        <li>формирования списка гостей;</li>
-        <li>подтверждения присутствия;</li>
-        <li>передачи информации организаторам мероприятия;</li>
-        <li>учёта предпочтений гостей при подготовке банкета;</li>
-        <li>связи с гостями по вопросам мероприятия.</li>
-      </ul>
-      <p>Персональные данные не используются для рекламы, маркетинга или массовых рассылок.</p>
-    </section>
-
-    <section>
-      <h2>4. Порядок обработки и хранения данных</h2>
-      <p>Обработка персональных данных осуществляется с использованием средств автоматизации.</p>
-      <p>Данные, отправленные через форму RSVP, могут храниться в сервисе Google Таблицы.</p>
-      <p>Использование Google Таблиц может предполагать трансграничную передачу персональных данных за пределы Российской Федерации.</p>
-      <p>Доступ к данным имеют только Оператор и организаторы соответствующего мероприятия.</p>
-      <p>Персональные данные не публикуются в открытом доступе и не передаются третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
-      <p><strong>Срок хранения данных:</strong> до окончания мероприятия плюс не более 30 календарных дней после его завершения. После этого данные подлежат удалению.</p>
-    </section>
-
-    <section>
-      <h2>5. Использование поддоменов</h2>
-      <p>Сайты мероприятий размещаются на поддоменах домена <strong>love-2026.ru</strong>.</p>
-      <p>Пример адреса сайта мероприятия: <strong>anna-ivan.love-2026.ru</strong></p>
-      <p>Поддомены являются частью инфраструктуры сервиса и не передаются в собственность заказчиков.</p>
-      <p>Сайт предоставляется заказчику на ограниченный срок для проведения мероприятия.</p>
-    </section>
-
-    <section>
-      <h2>6. Согласие пользователя</h2>
-      <p>Пользователь выражает согласие на обработку персональных данных путём:</p>
-      <ul>
-        <li>заполнения формы;</li>
-        <li>установки отметки checkbox при его наличии;</li>
-        <li>нажатия кнопки отправки формы.</li>
-      </ul>
-      <p>Отправляя форму, пользователь подтверждает достоверность предоставленных данных и ознакомление с настоящей Политикой.</p>
-    </section>
-
-    <section>
-      <h2>7. Права пользователя</h2>
-      <p>Пользователь имеет право:</p>
-      <ul>
-        <li>запросить информацию об обработке своих данных;</li>
-        <li>потребовать уточнения или удаления данных;</li>
-        <li>отозвать согласие на обработку персональных данных.</li>
-      </ul>
-      <p>Для этого необходимо обратиться по email: <a href="mailto:ВАШ_EMAIL">ВАШ_EMAIL</a></p>
-    </section>
-
-    <section>
-      <h2>8. Защита данных</h2>
-      <p>Оператор принимает разумные технические и организационные меры для защиты персональных данных от несанкционированного доступа, утраты, изменения и распространения.</p>
-      <p>Google Таблицы используются в закрытом режиме доступа.</p>
-    </section>
-
-    <section>
-      <h2>9. Заключительные положения</h2>
-      <p>Оператор вправе вносить изменения в настоящую Политику без предварительного уведомления.</p>
-      <p>Актуальная версия Политики всегда доступна по адресу: <strong>https://privacy.love-2026.ru</strong></p>
-      <p>Настоящая Политика действует бессрочно до замены новой редакцией.</p>
-    </section>
-
-    <div class="footer">
-      <p>Дата публикации: 12.05.2026</p>
-      <p>love-2026.ru</p>
+    <!-- Header как на основном сайте -->
+    <div class="privacy-header">
+        <div class="container">
+            <h1>Политика обработки персональных данных</h1>
+            <p class="subtitle">для сайтов-приглашений на домене love-2026.ru</p>
+        </div>
     </div>
-  </main>
+
+    <!-- Основной контент -->
+    <div class="privacy-content">
+        <div class="container">
+            <a href="https://love-2026.ru/" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Вернуться на главную
+            </a>
+
+            <div class="privacy-card">
+                <div class="privacy-inner">
+                    <section>
+                        <h2>1. Общие положения</h2>
+                        <p>Настоящая Политика обработки персональных данных определяет порядок обработки и защиты персональных данных пользователей сайтов-приглашений, размещённых на домене <strong>love-2026.ru</strong> и его поддоменах.</p>
+                        <p>Политика разработана в соответствии с Федеральным законом РФ от 27.07.2006 №152-ФЗ «О персональных данных».</p>
+                        <p>Используя сайт и отправляя форму RSVP, пользователь подтверждает согласие с настоящей Политикой.</p>
+
+                        <div class="info-box">
+                            <p><strong>Оператор персональных данных:</strong> самозанятый / физическое лицо.</p>
+                            <p><strong>Email для связи:</strong> <a href="mailto:ВАШ_EMAIL">ВАШ_EMAIL</a></p>
+                            <p><strong>Домен сервиса:</strong> love-2026.ru</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>2. Какие данные обрабатываются</h2>
+                        <p>Оператор может обрабатывать следующие персональные данные:</p>
+                        <ul>
+                            <li>имя;</li>
+                            <li>фамилия;</li>
+                            <li>информация о присутствии на мероприятии;</li>
+                            <li>количество гостей;</li>
+                            <li>предпочтения по напиткам или питанию;</li>
+                            <li>текстовые пожелания и комментарии.</li>
+                        </ul>
+                        <p>Пользователь самостоятельно принимает решение о предоставлении данных.</p>
+                        <p>Оператор не осуществляет обработку специальных категорий персональных данных, за исключением случаев, когда пользователь добровольно указывает такие сведения в текстовом поле формы.</p>
+                    </section>
+
+                    <section>
+                        <h2>3. Цели обработки персональных данных</h2>
+                        <p>Персональные данные используются исключительно для:</p>
+                        <ul>
+                            <li>организации мероприятия;</li>
+                            <li>формирования списка гостей;</li>
+                            <li>подтверждения присутствия;</li>
+                            <li>передачи информации организаторам мероприятия;</li>
+                            <li>учёта предпочтений гостей при подготовке банкета;</li>
+                            <li>связи с гостями по вопросам мероприятия.</li>
+                        </ul>
+                        <p>Персональные данные не используются для рекламы, маркетинга или массовых рассылок.</p>
+                    </section>
+
+                    <section>
+                        <h2>4. Порядок обработки и хранения данных</h2>
+                        <p>Обработка персональных данных осуществляется с использованием средств автоматизации.</p>
+                        <p>Данные, отправленные через форму RSVP, могут храниться в сервисе Google Таблицы.</p>
+                        <p>Использование Google Таблиц может предполагать трансграничную передачу персональных данных за пределы Российской Федерации.</p>
+                        <p>Доступ к данным имеют только Оператор и организаторы соответствующего мероприятия.</p>
+                        <p>Персональные данные не публикуются в открытом доступе и не передаются третьим лицам, за исключением случаев, предусмотренных законодательством РФ.</p>
+                        <p><strong>Срок хранения данных:</strong> до окончания мероприятия плюс не более 30 календарных дней после его завершения. После этого данные подлежат удалению.</p>
+                    </section>
+
+                    <section>
+                        <h2>5. Использование поддоменов</h2>
+                        <p>Сайты мероприятий размещаются на поддоменах домена <strong>love-2026.ru</strong>.</p>
+                        <p>Пример адреса сайта мероприятия: <strong>anna-ivan.love-2026.ru</strong></p>
+                        <p>Поддомены являются частью инфраструктуры сервиса и не передаются в собственность заказчиков.</p>
+                        <p>Сайт предоставляется заказчику на ограниченный срок для проведения мероприятия.</p>
+                    </section>
+
+                    <section>
+                        <h2>6. Согласие пользователя</h2>
+                        <p>Пользователь выражает согласие на обработку персональных данных путём:</p>
+                        <ul>
+                            <li>заполнения формы;</li>
+                            <li>установки отметки checkbox при его наличии;</li>
+                            <li>нажатия кнопки отправки формы.</li>
+                        </ul>
+                        <p>Отправляя форму, пользователь подтверждает достоверность предоставленных данных и ознакомление с настоящей Политикой.</p>
+                    </section>
+
+                    <section>
+                        <h2>7. Права пользователя</h2>
+                        <p>Пользователь имеет право:</p>
+                        <ul>
+                            <li>запросить информацию об обработке своих данных;</li>
+                            <li>потребовать уточнения или удаления данных;</li>
+                            <li>отозвать согласие на обработку персональных данных.</li>
+                        </ul>
+                        <p>Для этого необходимо обратиться по email: <a href="mailto:ВАШ_EMAIL">ВАШ_EMAIL</a></p>
+                    </section>
+
+                    <section>
+                        <h2>8. Защита данных</h2>
+                        <p>Оператор принимает разумные технические и организационные меры для защиты персональных данных от несанкционированного доступа, утраты, изменения и распространения.</p>
+                        <p>Google Таблицы используются в закрытом режиме доступа.</p>
+                    </section>
+
+                    <section>
+                        <h2>9. Заключительные положения</h2>
+                        <p>Оператор вправе вносить изменения в настоящую Политику без предварительного уведомления.</p>
+                        <p>Актуальная версия Политики всегда доступна по адресу: <strong>https://privacy.love-2026.ru</strong></p>
+                        <p>Настоящая Политика действует бессрочно до замены новой редакцией.</p>
+                    </section>
+
+                    <div class="privacy-footer">
+                        <p>Дата публикации: 12.05.2026</p>
+                        <p>love-2026.ru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
